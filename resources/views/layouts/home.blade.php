@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <!--Font Awesome Local-->
-    <link rel="stylesheet" type="text/css" href="{{asset('fontawesome-web/css/all.css')}}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{asset('fontawesome-web/css/all.css')}}"> --}}
 
         <title>IceTunezGh</title>
 
@@ -38,7 +38,7 @@
         <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
         <li class="nav-item">
-        <a class="nav-link" href="categories">Categories</a>
+        <a class="nav-link" href="{{route ('index') }}">Categories</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about">Users</a>
@@ -49,9 +49,9 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="posts/create">Post</a>
-          <a class="dropdown-item" href="categories/create">Category</a>
-          <a class="dropdown-item" href="users/register">User</a>
+          <a class="dropdown-item" href="{{route ('createPost') }}">Post</a>
+          <a class="dropdown-item" href="{{route ('create') }}">Category</a>
+          <a class="dropdown-item" href="{{route ('register') }}">User</a>
         </div>
         </li>
         </ul>

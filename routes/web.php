@@ -29,3 +29,11 @@ Route::get('/mixes', 'FrontController@mixes')->name('mixes');
 Route::get('/albums', 'FrontController@albums')->name('albums');
 Route::get('/videos', 'FrontController@videos')->name('videos');
 Route::get('/about', 'FrontController@about')->name('about');
+
+//Back End Routes
+Route::get('categories/create', 'FrontController@create')->name('create');
+Route::get('categories/index', 'FrontController@index')->name('index');
+Route::get('users/register', 'FrontController@register')->name('register');
+Route::get('users/login', 'FrontController@login')->name('login');
+Route::get('posts/create', 'FrontController@createPost')->name('createPost');
+Route::get('posts/edit', 'FrontController@postEdit')->name('postEdit');

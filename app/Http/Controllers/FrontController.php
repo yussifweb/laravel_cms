@@ -41,5 +41,39 @@ class FrontController extends Controller
         return view('about');
     }
 
+    // Back Controller
+
+    public function create(){
+
+        return view('categories/create');
+    }
+
+    public function index(){
+
+        return view('categories/index');
+    }
+
+    public function register(){
+
+        return view('users/register');
+    }
+
+    public function login(){
+
+        return view('users/login');
+    }
+
+    public function createPost(){
+
+        return view('posts/create');
+    }
+
+    public function postEdit(){
+
+        return view('posts/edit');
+    }
+
+
+
 }
 

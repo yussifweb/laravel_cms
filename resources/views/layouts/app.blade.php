@@ -73,7 +73,31 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <div class="card shadow">
+                            <div class="car-header">sdfsdfsd</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Posts</li>
+                                    <li>Categories</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col col-md-8">
+                        @yield('content')
+                    </div>
+
+                </div>
+            </div>
+
         </main>
     </div>
 </body>
